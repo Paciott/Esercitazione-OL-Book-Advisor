@@ -63,7 +63,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   margin: 0 2rem;
-  background-color: rgba(255, 245, 245, 0.8);
+  background-color: rgba(255, 245, 245, 0.6);
   padding: 1rem;
   border-radius: 0.2rem;
 }
@@ -91,7 +91,7 @@ h2 {
 
 .form-container button {
   cursor: pointer;
-  background-color: var(--pale-pink);
+  background-color: white;
   border: 1px solid var(--eerie-black);
   border-left: none;
   border-top-right-radius: 0.2rem;
@@ -111,10 +111,14 @@ ul {
   text-align: center;
   font-size: 1.7rem;
   color: var(--eerie-black);
+  max-width: 20rem;
+  margin: 2rem auto;
+  background-color: rgba(255, 245, 245, 0.6);
+  border-radius: 0.2rem;
 }
 
 .list-item {
-  background-color: rgba(255, 245, 245, 0.8);
+  background-color: rgba(255, 245, 245, 0.6);
   margin: 1rem auto;
   padding: 1rem 2rem;
   max-width: 60rem;
