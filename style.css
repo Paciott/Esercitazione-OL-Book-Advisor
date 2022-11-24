@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+:root {
+  --pale-pink: rgb(255, 245, 245);
+  --dark-pink: rgb(231, 224, 224);
+  --gunmetal: rgba(48, 52, 63, 1);
+  --eerie-black: rgba(27, 32, 33, 1);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: var(--dark-pink);
+  background-size: auto;
+  padding: 2rem 1rem;
+  font-weight: 500;
+}
+
+h1 span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 span svg {
+  fill: var(--pale-pink);
+  margin: 0 1rem;
+}
+
+h1 span span {
+  font-weight: 300;
+  color: inherit;
+}
+
+h2 {
+  margin: 0;
+  color: var(--eerie-black);
+  font-family: "Lora", sans-serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.search-container {
+  min-height: 20rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2rem;
+  background-color: rgba(255, 245, 245, 0.8);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  min-width: 40%;
+  border: 1px solid var(--eerie-black);
+  border-right: none;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container button {
+  cursor: pointer;
+  background-color: var(--pale-pink);
+  border: 1px solid var(--eerie-black);
+  border-left: none;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+.form-container button:hover {
+  background-color: var(--dark-pink);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.error-paragraph {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--eerie-black);
+}
+
+.list-item {
+  background-color: rgba(255, 245, 245, 0.8);
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  max-width: 60rem;
+  border-radius: 0.2rem;
+}
+
+.h3 {
+  font-family: "Lora", sans-serif;
+  font-size: 1.5rem;
+}
+
+.author {
+  color: var(--gunmetal);
+  font-weight: 500;
+}
+
+.list-item button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--pale-pink);
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  display: block;
+  transition: 150ms border linear;
+  border: 1px solid var(--pale-pink);
+  border-radius: 0.2rem;
+}
+.list-item button:active {
+  background-color: var(--dark-pink);
+}
+
+.list-item button:hover {
+  border: 1px solid var(--eerie-black);
+}
+
+.description-paragraph {
+  padding: 1rem;
+  border-top: 1px solid var(--gunmetal);
+  color: var(--gunmetal);
+}
+
+/*LOADER*/
+.positioner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader div {
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--pale-pink);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.loader div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.loader div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.loader div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  h1 span svg {
+    display: none;
+  }
+
+  h1 {
+    padding: 2rem;
+  }
+}
