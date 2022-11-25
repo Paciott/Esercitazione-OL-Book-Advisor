@@ -16,7 +16,7 @@ Nel momento in cui viene avviata la ricerca è mostrato a schermo un feedback vi
 
 ## Screenshots
 
-![active-state](/screenshots/Active-state.png)
+![active](/screenshots/Active.png)
 ![error](/screenshots/Error.png)
 
 ## Costruito con:

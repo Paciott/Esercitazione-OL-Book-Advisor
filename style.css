@@ -63,7 +63,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   margin: 0 2rem;
-  background-color: rgba(255, 245, 245, 0.6);
+  background-color: rgba(255, 245, 245, 0.9);
   padding: 1rem;
   border-radius: 0.2rem;
 }
@@ -111,14 +111,14 @@ ul {
   text-align: center;
   font-size: 1.7rem;
   color: var(--eerie-black);
-  max-width: 20rem;
+  max-width: 18rem;
   margin: 2rem auto;
-  background-color: rgba(255, 245, 245, 0.6);
+  background-color: rgba(255, 245, 245, 0.9);
   border-radius: 0.2rem;
 }
 
 .list-item {
-  background-color: rgba(255, 245, 245, 0.6);
+  background-color: rgba(255, 245, 245, 0.9);
   margin: 1rem auto;
   padding: 1rem 2rem;
   max-width: 60rem;
@@ -143,16 +143,16 @@ ul {
   padding: 0.5rem;
   margin-top: 1rem;
   display: block;
-  transition: 150ms border linear;
-  border: 1px solid var(--pale-pink);
+  transition: 100ms background-color linear;
+  border: 1px solid var(--eerie-black);
   border-radius: 0.2rem;
 }
 .list-item button:active {
-  background-color: var(--dark-pink);
+  background-color: var(--gunmetal);
 }
 
 .list-item button:hover {
-  border: 1px solid var(--eerie-black);
+  background-color: var(--dark-pink);
 }
 
 .description-paragraph {
